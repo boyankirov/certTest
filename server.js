@@ -45,4 +45,4 @@ var checkAuth = function(cert) {
   return true;
 };
  
-https.createServer(opts, app).listen(4000);
+https.createServer(opts, app).listen(process.env.PORT || 4000);
